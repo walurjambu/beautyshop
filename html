@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereal Glow | Luxury Wellness & Beauty</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#b8926a',
+                        secondary: '#fdf8f5',
+                        accent: '#4a3f35',
+                        softPink: '#f9ebea'
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .treatment-card { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .treatment-card:hover { transform: translateY(-10px); }
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://gawvfnziownlvhrgtmgq.supabase.co/storage/v1/object/public/restaurant/Oxygen-Glow.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="bg-secondary text-accent font-sans">
+
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-primary/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <span class="font-serif text-2xl tracking-widest uppercase font-bold text-primary">Ethereal Glow</span>
+                <div class="hidden md:flex space-x-8 uppercase text-xs tracking-widest font-semibold">
+                    <a href="#home" class="hover:text-primary transition-colors">Home</a>
+                    <a href="#treatments" class="hover:text-primary transition-colors">Treatments</a>
+                    <a href="#booking" class="bg-primary text-white px-6 py-2 rounded-full hover:bg-accent transition-all shadow-md">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="relative h-screen flex items-center justify-center text-center hero-bg">
+        <div class="px-4">
+            <span class="text-white uppercase tracking-[0.4em] text-sm mb-4 block">Est. 2024 • Professional Care</span>
+            <h1 class="font-serif text-5xl md:text-8xl text-white mb-6 italic">Pure Radiance</h1>
+            <p class="text-white/90 max-w-2xl mx-auto text-lg mb-10 font-light leading-relaxed">
+                Experience the intersection of science and serenity with our curated botanical treatments.
+            </p>
+            <a href="#treatments" class="bg-white text-accent px-12 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-primary hover:text-white transition-all shadow-2xl">Explore Menu</a>
+        </div>
+    </section>
+
+    <section id="treatments" class="py-24 px-4 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="font-serif text-4xl md:text-5xl mb-4 italic text-primary">Signature Treatments</h2>
+            <p class="text-gray-500 font-light tracking-wide">Hand-picked rituals for your ultimate rejuvenation</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Treatment Item -->
+            <div class="treatment-card bg-white rounded-[2rem] overflow-hidden shadow-lg border border-primary/5">
+                <img src="https://gawvfnziownlvhrgtmgq.supabase.co/storage/v1/object/public/restaurant/Oxygen-Glow.jpg" alt="Oxygen Glow" class="w-full h-72 object-cover">
+                <div class="p-8">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-serif text-2xl">Oxygen Glow</h3>
+                        <span class="text-primary font-bold">$120</span>
+                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">Pure oxygen infusion for instant hydration, lifting, and that "lit-from-within" radiance.</p>
+                    <a href="#booking" class="text-xs uppercase font-bold tracking-widest text-primary border-b border-primary pb-1">Book This Service</a>
+                </div>
+            </div>
+
+            <!-- Treatment Item -->
+            <div class="treatment-card bg-white rounded-[2rem] overflow-hidden shadow-lg border border-primary/5">
+                <img src="https://gawvfnziownlvhrgtmgq.supabase.co/storage/v1/object/public/restaurant/botanical%20peel.jpeg" alt="Botanical Peel" class="w-full h-72 object-cover">
+                <div class="p-8">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-serif text-2xl">Botanical Peel</h3>
+                        <span class="text-primary font-bold">$145</span>
+                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">Natural fruit enzymes gently resurface skin, revealing a smooth and even complexion.</p>
+                    <a href="#booking" class="text-xs uppercase font-bold tracking-widest text-primary border-b border-primary pb-1">Book This Service</a>
+                </div>
+            </div>
+
+            <!-- Treatment Item -->
+            <div class="treatment-card bg-white rounded-[2rem] overflow-hidden shadow-lg border border-primary/5">
+                <img src="https://gawvfnziownlvhrgtmgq.supabase.co/storage/v1/object/public/restaurant/Hot%20Stone%20Serenity.jpeg" alt="Hot Stone" class="w-full h-72 object-cover">
+                <div class="p-8">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-serif text-2xl">Hot Stone Ritual</h3>
+                        <span class="text-primary font-bold">$160</span>
+                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">Basalt stones melt away tension in a deeply relaxing 90-minute full body therapy.</p>
+                    <a href="#booking" class="text-xs uppercase font-bold tracking-widest text-primary border-b border-primary pb-1">Book This Service</a>
+                </div>
+            </div>
+
+            <!-- Treatment Item -->
+            <div class="treatment-card bg-white rounded-[2rem] overflow-hidden shadow-lg border border-primary/5 lg:col-start-1">
+                <img src="https://gawvfnziownlvhrgtmgq.supabase.co/storage/v1/object/public/restaurant/Lash%20Artistry.jpeg" alt="Lash Artistry" class="w-full h-72 object-cover">
+                <div class="p-8">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-serif text-2xl">Lash Artistry</h3>
+                        <span class="text-primary font-bold">$110</span>
+                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">Weightless silk extensions individually applied for a stunning, naturally full lash line.</p>
+                    <a href="#booking" class="text-xs uppercase font-bold tracking-widest text-primary border-b border-primary pb-1">Book This Service</a>
+                </div>
+            </div>
+
+            <!-- Treatment Item -->
+            <div class="treatment-card bg-white rounded-[2rem] overflow-hidden shadow-lg border border-primary/5">
+                <img src="https://gawvfnziownlvhrgtmgq.supabase.co/storage/v1/object/public/restaurant/briw.jpg" alt="Brow Sculpt" class="w-full h-72 object-cover">
+                <div class="p-8">
+                    <div class="flex justify-between items-center mb-2">
+                        <h3 class="font-serif text-2xl">Brow Sculpt</h3>
+                        <span class="text-primary font-bold">$45</span>
+                    </div>
+                    <p class="text-sm text-gray-500 leading-relaxed mb-6">Precision mapping and organic tinting to define your natural facial structure.</p>
+                    <a href="#booking" class="text-xs uppercase font-bold tracking-widest text-primary border-b border-primary pb-1">Book This Service</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="py-24 bg-softPink px-4 overflow-hidden">
+        <div class="max-w-5xl mx-auto bg-white rounded-[3rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+            <div class="lg:w-1/3 bg-accent p-12 text-white flex flex-col justify-between">
+                <div>
+                    <h2 class="font-serif text-4xl mb-4 italic">Reserve Your Time</h2>
+                    <p class="text-white/70 text-sm leading-relaxed mb-8">
+                        Once you submit this form, we will receive your email request and you will be redirected to WhatsApp for instant confirmation.
+                    </p>
+                    <div class="space-y-4 text-sm">
+                        <p><i class="fas fa-clock mr-3 text-primary"></i> Mon-Sat: 10am - 8pm</p>
+                        <p><i class="fas fa-map-marker-alt mr-3 text-primary"></i> St 310 no 95 - Phnom Penh, Cambodia</p>
+                        <p><i class="fas fa-phone-alt mr-3 text-primary"></i> +855 69 595 947</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:w-2/3 p-12">
+                <!-- FORM SUBMITTING TO WEB3FORMS -->
+                <form id="bookingForm" action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                    <!-- Web3Forms API Key -->
+                    <input type="hidden" name="access_key" value="c2d79451-673a-494b-90a0-cbf0e3e99fec">
+                    <input type="hidden" name="subject" value="New Appointment Request - Ethereal Glow">
+                    <input type="hidden" name="from_name" value="Ethereal Glow Website">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-1">
+                            <label class="text-[10px] uppercase font-bold tracking-[0.2em] text-primary">Full Name</label>
+                            <input type="text" name="name" id="name" required placeholder="Jane Doe" class="w-full border-b border-gray-200 py-3 focus:outline-none focus:border-primary transition-colors bg-transparent">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-[10px] uppercase font-bold tracking-[0.2em] text-primary">Phone Number</label>
+                            <input type="tel" name="phone" id="phone" required placeholder="+1 (555) 000-0000" class="w-full border-b border-gray-200 py-3 focus:outline-none focus:border-primary transition-colors bg-transparent">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-1">
+                            <label class="text-[10px] uppercase font-bold tracking-[0.2em] text-primary">Email Address</label>
+                            <input type="email" name="email" id="email" required placeholder="jane@example.com" class="w-full border-b border-gray-200 py-3 focus:outline-none focus:border-primary transition-colors bg-transparent">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-[10px] uppercase font-bold tracking-[0.2em] text-primary">Therapist Preference</label>
+                            <select name="therapist" id="therapist" class="w-full border-b border-gray-200 py-3 focus:outline-none focus:border-primary transition-colors bg-transparent">
+                                <option value="No Preference">No Preference</option>
+                                <option value="Sarah (Lead Esthetician)">Sarah (Esthetician)</option>
+                                <option value="Elena (Massages)">Elena (Massage Specialist)</option>
+                                <option value="Marcus (Lashes)">Marcus (Lash Artist)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1">
+                        <label class="text-[10px] uppercase font-bold tracking-[0.2em] text-primary">Selected Treatment</label>
+                        <select name="service" id="service" required class="w-full border-b border-gray-200 py-3 focus:outline-none focus:border-primary transition-colors bg-transparent">
+                            <option value="">Select Service</option>
+                            <option value="Oxygen Glow Facial ($120)">Oxygen Glow Facial ($120)</option>
+                            <option value="Botanical Peel ($145)">Botanical Peel ($145)</option>
+                            <option value="Hot Stone Serenity ($160)">Hot Stone Serenity ($160)</option>
+                            <option value="Lash Artistry ($110)">Lash Artistry ($110)</option>
+                            <option value="Brow Sculpt ($45)">Brow Sculpt ($45)</option>
+                        </select>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="space-y-1">
+                            <label class="text-[10px] uppercase font-bold tracking-[0.2em] text-primary">Date</label>
+                            <input type="date" name="date" id="date" required class="w-full border-b border-gray-200 py-3 focus:outline-none focus:border-primary transition-colors bg-transparent">
+                        </div>
+                        <div class="space-y-1">
+                            <label class="text-[10px] uppercase font-bold tracking-[0.2em] text-primary">Time</label>
+                            <input type="time" name="time" id="time" required class="w-full border-b border-gray-200 py-3 focus:outline-none focus:border-primary transition-colors bg-transparent">
+                        </div>
+                    </div>
+
+                    <div id="formStatus" class="hidden p-4 rounded-lg text-sm mb-4"></div>
+
+                    <button type="submit" id="submitBtn" class="w-full bg-primary text-white py-4 rounded-2xl font-bold uppercase tracking-widest hover:bg-accent transition-all shadow-xl flex items-center justify-center gap-3">
+                        <span id="btnText">Confirm & Message WhatsApp</span>
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-accent text-white py-12 text-center">
+        <span class="font-serif text-2xl tracking-widest uppercase font-bold text-primary">Ethereal Glow</span>
+        <div class="mt-4 text-white/60 text-sm space-y-1">
+            <p>St 310 no 95 - Phnom Penh, Cambodia</p>
+            <p>Ph: +855 69 595 947</p>
+        </div>
+        <div class="mt-6 flex justify-center space-x-6 text-white/40">
+            <a href="#" class="hover:text-primary transition-colors"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-primary transition-colors"><i class="fab fa-facebook"></i></a>
+        </div>
+        <p class="mt-8 text-[10px] tracking-[0.3em] uppercase text-white/30">© 2024 Ethereal Glow Wellness Sanctuary</p>
+    </footer>
+
+    <script>
+        const form = document.getElementById('bookingForm');
+        const submitBtn = document.getElementById('submitBtn');
+        const statusDiv = document.getElementById('formStatus');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // UI state
+            submitBtn.disabled = true;
+            document.getElementById('btnText').textContent = "Processing...";
+            
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            // 1. Submit to Web3Forms for Email notification
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let jsonResponse = await response.json();
+                if (response.status == 200) {
+                    // Success UI
+                    statusDiv.innerHTML = "Success! Opening WhatsApp for confirmation...";
+                    statusDiv.className = "p-4 rounded-lg text-sm mb-4 bg-green-100 text-green-700";
+                    statusDiv.classList.remove('hidden');
+
+                    // 2. Trigger WhatsApp Redirect with your NEW phone number
+                    const wpNumber = "85569595947"; 
+                    const wpMessage = `✨ *ETHEREAL GLOW BOOKING* ✨%0A%0A` +
+                                     `👤 *Name:* ${encodeURIComponent(object.name)}%0A` +
+                                     `📞 *Phone:* ${encodeURIComponent(object.phone)}%0A` +
+                                     `📧 *Email:* ${encodeURIComponent(object.email)}%0A` +
+                                     `🧖‍♀️ *Service:* ${encodeURIComponent(object.service)}%0A` +
+                                     `👩‍⚕️ *Therapist:* ${encodeURIComponent(object.therapist)}%0A` +
+                                     `📅 *Date:* ${encodeURIComponent(object.date)}%0A` +
+                                     `⏰ *Time:* ${encodeURIComponent(object.time)}%0A%0A` +
+                                     `_Submission confirmed via email system._`;
+
+                    window.open(`https://wa.me/${wpNumber}?text=${wpMessage}`, '_blank');
+                    form.reset();
+                } else {
+                    console.log(response);
+                    statusDiv.innerHTML = "Something went wrong. Please try again.";
+                    statusDiv.className = "p-4 rounded-lg text-sm mb-4 bg-red-100 text-red-700";
+                    statusDiv.classList.remove('hidden');
+                }
+            })
+            .catch(error => {
+                console.log(error);
+                statusDiv.innerHTML = "Network error. Check connection.";
+                statusDiv.classList.remove('hidden');
+            })
+            .then(() => {
+                submitBtn.disabled = false;
+                document.getElementById('btnText').textContent = "Confirm & Message WhatsApp";
+            });
+        });
+    </script>
+</body>
+</html>
